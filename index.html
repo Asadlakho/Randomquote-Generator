@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Generator | Asad Ali</title>
+  <script src="https://kit.fontawesome.com/b2b731f521.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px 50px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      width: 80%;
+      max-width: 500px;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .quote-icon {
+      font-size: 2.5rem;
+      color: #ffeb3b;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    #quote {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #ffeb3b;
+      font-weight: 600;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    button {
+      background: linear-gradient(90deg, #ff9800, #ff5722);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #ff5722, #ff9800);
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(255, 87, 34, 0.4);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+<i class="fa-solid fa-wand-magic-sparkles quote-icon"></i>
+    <h2 id="quote">Click the button to get a quote!</h2>
+
+    <button onclick="newQuote()">
+      <i class="fa-solid fa-lightbulb"></i> Get Quote
+    </button>
+
+    <p class="footer">
+      Made with <i class="fa-solid fa-heart" style="color:#ff5252"></i> by Asad
+    </p>
+  </div>
+
+ 
+</body>
+</html>
